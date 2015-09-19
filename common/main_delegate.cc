@@ -45,7 +45,7 @@ void MainDelegate::InitializeResourceBundle() {
 #else
   base::FilePath pak_dir;
   PathService::Get(base::DIR_MODULE, &pak_dir);
-  path = pak_dir.Append(FILE_PATH_LITERAL("content_shell.pak"));
+  path = pak_dir.Append(FILE_PATH_LITERAL("libchromiumcontent.pak"));
 #endif
 
   ui::ResourceBundle::InitSharedInstanceWithPakPath(path);
